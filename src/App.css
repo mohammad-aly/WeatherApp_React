@@ -1,38 +1,175 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #2880bc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.container .main {
+  width: 385px;
+  height: 670px;
+  border-radius: 80px;
+  background-color: #010c1c;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container .main .application {
+  width: 100%;
+  height: 560px;
+  background-color: #168ef7;
+  border-radius: 70px;
+  margin: 10px;
+}
+.container .main .application .icons {
+  width: 100%;
+  height: 450px;
+  border-radius: 70px;
+}
+.container .main .application .icons .nav {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+  color: white;
+}
+.container .main .application .icons .nav p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.container .main .application .icons .nav p svg {
+  font-size: 20px;
+}
+.container .main .application .icons .nav svg {
+  font-size: 25px;
+}
+.container .main .application .icons .heading {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  color: white;
+}
+.container .main .application .icons .heading > svg {
+  font-size: 90px;
+  color: yellow;
+}
+.container .main .application .icons .heading > h2 {
+  font-size: 85px;
+}
+.container .main .application .icons .lon-lat {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0 50px;
+  color: white;
+}
+.container .main .application .icons .lon-lat > span svg {
+  font-size: 25px;
+}
+.container .main .application .details {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 40px;
+  color: white;
+}
+.container .main .application .details .wind {
+  display: flex;
+  align-items: center;
+}
+.container .main .application .details .wind > span svg {
+  font-size: 25px;
+  padding-right: 5px;
+}
+.container .main .application .details .humidity {
+  display: flex;
+  align-items: center;
+}
+.container .main .application .details .humidity > span svg {
+  font-size: 25px;
+  padding-right: 5px;
+}
+.container .main .application > .search {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.container .main .application > .search > input {
+  width: 60%;
+  padding: 10px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(231, 229, 229);
+}
+.container .main .application > .search > button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #168ef7;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 330px) {
+  .container .main .application .icons .lon-lat {
+    padding: 0 25px;
+    height: 80px;
   }
-  to {
-    transform: rotate(360deg);
+  .container .main {
+    width: 310px;
+    height: 580px;
   }
-}
+  .container .main .application {
+    width: 100%;
+    height: 480px;
+  }
+  .container .main .application .icons {
+    width: 100%;
+    height: 380px;
+  }
+  .container .main .application .icons .nav {
+    width: 100%;
+    height: 70px;
+  }
+  .container .main .application .icons .heading {
+    width: 100%;
+    height: 215px;
+  }
+  .container .main .application .details {
+    padding: 0 20px;
+    height: 90px;
+  }
+  .container .main .application > .search {
+    width: 95%;
+  }
+  .container .main .application .icons .heading > h2 {
+    font-size: 70px;
+  }
+}/*# sourceMappingURL=App.css.map */
